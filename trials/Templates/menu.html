@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/menu.css') }}">
+</head>
+<body>
+
+    {% with message1 = get_flashed_messages() %}
+        {% if message1 %}
+            {% for message in message1 %}
+                <p class="msg">{{ message }}</p>
+            {% endfor %}
+        {% endif %}  
+    {% endwith %}  
+    
+    <a href="/item"><img src="https://static.vecteezy.com/system/resources/previews/004/262/773/non_2x/online-shop-icon-set-for-web-presentation-logo-icon-symbol-button-free-vector.jpg" alt="CART"  width="100" height="100"></a>
+    <div class="flex">
+        <div class="card">
+            <img src="{{ url_for('static',filename='images/square bacon wrapped shrimp.png') }}" class="card-img" alt="Image">
+            <h3>Appetizers</h3>
+            <p>Choose from our mouth watering range of appetizers.</p>
+            <button class="btn"><a href="/appetizer">Order Now</a></button>
+        </div>
+                
+        <div class="card">
+            <img src="{{ url_for('static',filename='images/square seafood boil.png') }}" class="card-img" alt="Image">
+            <h3>Entrées</h3>
+            <p>Lavish mainstream main-course seafood served here.</p>
+            <button class="btn"><a href="/entreesmenu">Order Now</a></button>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static',filename='images/square lobster roll.png') }}" class="card-img" alt="Image">
+            <h3>Small Punch</h3>
+            <p>Small Punch that fill your stomach with goodness served here.</p>
+            <button class="btn"><a href="/shorteates">Order Now</a></button>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static',filename='images/Bev.jpg') }}" class="card-img" alt="Image">
+            <h3>Beverages</h3>
+            <p>Select from our range of Beverages served here.</p>
+            <button class="btn"><a href="/Beverages">Order Now</a></button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

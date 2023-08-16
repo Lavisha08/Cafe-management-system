@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shorteates.css') }}">
+</head>
+<body>
+    <div class="flex">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square Tuna Salad.png') }}" class="card-img" alt="Image">
+            <h3>Tuna Salad</h3>
+            <p>Blend of two main ingredients Tuna and mayonnaise, served with fresh lime and lettuce.</p>
+            <button class="btn">Order Now</button>
+        </div>
+                
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square crab rangoon.png') }}" class="card-img" alt="Image">
+            <h3>Crab Rangoon</h3>
+            <p>Crab meat filled crisp dumpling appetizers served with ketchup.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square lobster roll.png') }}" class="card-img" alt="Image">
+            <h3>Lobster roll</h3>
+            <p>Lobster meat served on a grilled hot-dog style bun along with coleslaw and fries.</p>
+            <button class="btn">Order Now</button>
+            
+        
+        
+    </div>
+</body>
+</html>

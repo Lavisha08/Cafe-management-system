@@ -1,0 +1,26 @@
+body {
+    background-image: url("custlog.jpg");
+    margin-top: 20px;
+}
+
+.container{
+    background-image: url("admindb.jpg");
+   
+}
+ button{
+    height: 40px;
+    color: #000000;
+    background: #00fbff;
+    padding: 5px 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 150px;
+    cursor: pointer;
+    transition: 0.4s ease;
+    margin-left: 20px;
+    text-decoration: none;
+}
+a{
+    text-decoration: #000000;
+    color: #000000;
+}

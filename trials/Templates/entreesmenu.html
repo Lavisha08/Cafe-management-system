@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/entreesmenu.css') }}">
+</head>
+<body>
+    <div class="flex">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square seafood boil.png') }}" class="card-img" alt="Image">
+            <h3>Seafood Boil</h3>
+            <p>One-pot recipe consisting of lobster,crab,shrimp,mussels,sausage and corn cooked in soyabean paste.</p>
+            <button class="btn">Order Now</button>
+        </div>
+                
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square shrimp chow mein.png') }}" class="card-img" alt="Image">
+            <h3>Shrimp Chowmein</h3>
+            <p>Boiled noodles mixed with light sauces,slightly crunchy veggies and Shrimp - a delightful maincourse.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square fish tacos with avacado.png') }}" class="card-img" alt="Image">
+            <h3>Fish Tacos with Avacados</h3>
+            <p>Crispy tortillas stuffed with veggies, fried fish, white sauce, lime and avacados.</p>
+            <button class="btn">Order Now</button>
+        </div>
+            
+        
+        
+    </div>
+</body>
+</html>

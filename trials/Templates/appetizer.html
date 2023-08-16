@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/appetizer.css') }}">
+</head>
+<body>
+    <div class="flex">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square squid golden fry .jpg') }}" class="card-img" alt="Image">
+            <h3>Squid Golden Fry</h3>
+            <p>Squid rings coated with simple masalas and rice flour and deep fried till golden - a wonderful starter.</p>
+            <button class="btn">Order Now</button>
+        </div>
+                
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square bacon wrapped shrimp.png') }}" class="card-img" alt="Image">
+            <h3>Bacon Wrapped Shrimp</h3>
+            <p>Marinated shrimps, wrapped in Bacon and cooked to perfection.</p>
+            <button class="btn">Order Now</button>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/square crab stuffed mushrooms.png') }}" class="card-img" alt="Image">
+            <h3>Crab Stuffed Mushrooms</h3>
+            <p>Roasted mushrooms stuffed with crab filling, cheesy, rich and great as an appetizer.</p>
+            <button class="btn">Order Now</button>
+        </div>
+     </div>
+</body>
+</html>
